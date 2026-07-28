@@ -1,0 +1,21 @@
+# Daily workflow
+git status              # See what changed
+git add .               # Stage all changes
+git commit -m "msg"     # Commit with message
+git push                # Push to GitHub
+git pull                # Get latest from GitHub
+
+# Branching
+git checkout -b feature/name    # Create & switch branch
+git checkout branch-name        # Switch branch
+git branch -a                   # List all branches
+git branch -d branch-name       # Delete branch
+
+# History
+git log --oneline       # See commits compactly
+git log -n 5            # See last 5 commits
+git diff                # See changes before commit
+
+# If you mess up
+git reset --soft HEAD~1 # Undo last commit, keep changes
+git checkout -- file    # Discard changes to file
