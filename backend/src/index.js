@@ -3,11 +3,18 @@ const cors = require('cors');
 require('dotenv').config();
 const pool = require('./config/db');
 
+// Import routes
+const todoRoutes = require('./routes/todoRoutes');
+
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Routes
+app.use('/api/todos', todoRoutes);
+
 
 // Test route
 app.get('/api/test', (req, res) => {
