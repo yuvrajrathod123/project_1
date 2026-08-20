@@ -33,7 +33,7 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'Backend is running!' });
 });
 
-// Test database connection
+// Test database connection: curl http://localhost:5000/api/db-test
 app.get('/api/db-test', async (req, res) => {
   try {
     const result = await pool.query('SELECT NOW()');

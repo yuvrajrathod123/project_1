@@ -19,3 +19,27 @@ git diff                # See changes before commit
 # If you mess up
 git reset --soft HEAD~1 # Undo last commit, keep changes
 git checkout -- file    # Discard changes to file
+
+
+
+#postgre command
+# Update package lists
+sudo apt-get update
+
+# Install PostgreSQL
+sudo apt-get install -y postgresql postgresql-contrib
+
+# Start PostgreSQL service
+sudo service postgresql start
+
+# Check if it's running
+sudo service postgresql status
+
+#to inter postgres DB
+sudo -u postgres psql
+
+\l -- list DB
+\c todos_db   -- use database  
+\dt   -- list tables 
+\d table_name  -- to see table structure
+select * from todos;  -- tosee data
