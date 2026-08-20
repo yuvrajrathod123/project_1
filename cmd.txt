@@ -1,0 +1,11 @@
+
+-- to create the todos..
+
+curl -X POST http://localhost:5000/api/todos \
+  -H "Content-Type: application/json" \
+  -d '{"title":"Vegitables","description":"vange, batate, onion"}'
+
+
+-- to run the test file
+node test/test-getAllTodos.js
+
